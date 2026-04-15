@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Multimedia Dictionary</title>
+        <style>
+            h1 {
+                font-family: 'Times New Roman';
+                text-align:center 
+            }
+            body {
+                font-family: 'Times New Roman';
+                text-align: center; 
+                margin-top: 60px; 
+            }
+            select, button {
+                font-family: 'Times New Roman';
+                font-size: 16px; 
+                padding: 6px; 
+                margin: 5px;
+            }
+            textarea{
+                width:320px; 
+                height:80px;
+                font-family: 'Times New Roman';
+                font-size: 16px; 
+                padding: 6px; 
+                margin: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Assignment: Multimedia Dictionary</h1>
+        <h3>Select a word </h3>
+        <select id="MenuForWord" onchange = "showSentence()">
+            <option value=""> Select a word </option>
+            <option value="Apple" data-sentence = "The red apple.">Apple</option>
+            <option value="New York" data-sentence = "A famous state in the USA is New York.">New York</option>
+            <option value="Banana" data-sentence = "The yellow banana.">Yellow</option>
+            <option value="Miami" data-sentence = "A city in Florida is Miami.">Miami</option>
+            <option value="Strawberry" data-sentence = "Strawberries are red.">Strawberry</option>
+        </select>
+        <button onclick = "speakWord()"> Speak Word</button>
+        <br><br>
+        <h3>Sentence</h3>
+
+        <textarea id="BoxForSentence" readonly></textarea>
+        <button onclick="speakSentence()">Speak Sentence</button>
+        <script src = "dictionary.js"></script>
+        <br><br>
+        <a href="index.html" > Return to my Portfolio Page </a>
+
+    </body>
+
+</html>
