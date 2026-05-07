@@ -3,29 +3,29 @@
     {
       "title": "Drums",
       "description": "Drums are percussion instruments that provide rhythm.",
-      "image": "images/Drums.png",
-      "audio": "audio/1990'sdrums.mp3",
+      "image": "Drums.png",
+      "audio": "1990'sdrums.mp3",
       "category": "Percussion"
     },
     {
       "title": "Guitar",
       "description": "The guitar is a string instrument played by strumming or plucking.",
-      "image": "images/guitar.png",
-      "audio": "audio/guitar.mp3",
+      "image": "guitar.png",
+      "audio": "guitar.mp3",
       "category": "String"
     },
     {
       "title": "Piano",
       "description": "The piano is a keyboard instrument used in many musical styles.",
-      "image": "images/piano.png",
-      "audio": "audio/piano.mp3",
+      "image": "piano.png",
+      "audio": "piano.mp3",
       "category": "Keyboard"
     },
     {
       "title": "Flute",
       "description": "The flute is a wind instrument played by blowing air across its opening.",
-      "image": "images/flute.png",
-      "audio": "audio/flute.mp3",
+      "image": "flute.png",
+      "audio": "flute.mp3",
       "category": "Wind"
     }
   ]
