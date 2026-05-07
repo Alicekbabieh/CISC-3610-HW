@@ -2,9 +2,6 @@ let data = [];
 let audioPlayer = null;
 let currentAudio = null;
 
-/* ============================
-   LOAD DATA
-============================ */
 fetch("data.json")
   .then(res => res.json())
   .then(json => {
@@ -12,9 +9,6 @@ fetch("data.json")
     renderMenu(data);
   });
 
-/* ============================
-   MENU RENDERING
-============================ */
 function renderMenu(items) {
   const menu = document.getElementById("menu");
   menu.innerHTML = "";
@@ -35,9 +29,6 @@ function renderMenu(items) {
   });
 }
 
-/* ============================
-   CONTENT DISPLAY
-============================ */
 function loadContent(item) {
   document.getElementById("title").textContent = item.title;
   document.getElementById("description").textContent = item.description;
@@ -45,9 +36,6 @@ function loadContent(item) {
   currentAudio = item.audio;
 }
 
-/* ============================
-   AUDIO CONTROLS
-============================ */
 document.getElementById("playBtn").onclick = () => {
   if (!currentAudio) {
     alert("Select an instrument first!");
@@ -66,9 +54,6 @@ document.getElementById("stopBtn").onclick = () => {
   }
 };
 
-/* ============================
-   SEARCH & FILTER
-============================ */
 function applyFilters() {
   const search = document.getElementById("search").value.toLowerCase();
   const filter = document.getElementById("filter").value;
@@ -84,16 +69,10 @@ function applyFilters() {
 document.getElementById("search").addEventListener("input", applyFilters);
 document.getElementById("filter").addEventListener("change", applyFilters);
 
-/* ============================
-   SERVICE WORKER
-============================ */
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("service-worker.js");
 }
 
-/* ============================
-   PWA INSTALL LOGIC ✅ REQUIRED
-============================ */
 let deferredPrompt;
 const installBtn = document.getElementById("installBtn");
 
