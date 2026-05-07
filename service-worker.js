@@ -1,9 +1,9 @@
 const CACHE_NAME = "music-explorer-v1";
 
 const FILES_TO_CACHE = [
-  "index.html",
-  "index.css",
-  "index.js",
+  "PWA.html",
+  "PWA.css",
+  "PWA.js",
   "manifest.json",
   "data.json"
 ];
